@@ -16,67 +16,35 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-EC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-IMEI.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-HPET.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-USB-Reset.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USB-Reset.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-USBX.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USBX.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-CPUM.aml</string>
-				<key>Enabled</key>
-				<false/>
 				<key>Path</key>
 				<string>SSDT-CPUM.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-DESKTOP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX-DESKTOP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -314,13 +282,7 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>BQAAAA==</data>
-			</dict>
-		</dict>
+		<dict/>
 		<key>Delete</key>
 		<dict/>
 	</dict>
@@ -780,9 +742,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<true/>
 			<key>AppleXcpmForceBoost</key>
@@ -796,7 +758,7 @@
 			<key>DisableIoMapperMapping</key>
 			<false/>
 			<key>DisableLinkeditJettison</key>
-			<false/>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -851,7 +813,7 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -977,7 +939,30 @@
 			<false/>
 		</dict>
 		<key>Tools</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>FullNvramAccess</key>
+				<false/>
+				<key>Name</key>
+				<string>CleanNvram</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -1002,7 +987,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100</string>
+				<string>-v keepsyms=1 debug=0x100 alcid=18</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1211,18 +1196,6 @@
 				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NvmExpressDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Path</key>
-				<string>NvmExpressDxe.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
