@@ -492,7 +492,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CpuTscSync</string>
 				<key>MaxKernel</key>
@@ -846,6 +846,8 @@
 			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -1068,7 +1070,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02752303QXJG36JC</string>
+			<string>C02707100GUJG361H</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1080,9 +1082,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02VW081HX87</string>
+			<string>C02T86YLHX87</string>
 			<key>SystemUUID</key>
-			<string>F9162FA7-8632-40A7-BE27-518BC38CD065</string>
+			<string>79DCA83F-7355-4FD3-9934-3A88438DB43B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1369,6 +1371,8 @@
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
